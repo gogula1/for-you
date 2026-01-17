@@ -1,0 +1,17 @@
+{
+  "overthinking": {
+    "now": "Stop the thought loop",
+    "why": "Fear of uncertainty",
+    "do_now": "Write the thought once",
+    "do_next": "Take one small action",
+    "avoid": "Searching for perfect answers"
+  },
+
+  "stress": {
+    "now": "Mind-body overload",
+    "why": "Too many demands",
+    "do_now": "Slow breathing",
+    "do_next": "Break tasks",
+    "avoid": "Multitasking"
+  }
+}

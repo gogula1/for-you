@@ -1,0 +1,14 @@
+{
+  "tired": {
+    "body": "Low energy or poor sleep",
+    "mind": "Reduced focus",
+    "cause": "Sleep or food imbalance",
+    "do": "Rest and hydrate"
+  },
+
+  "nature": {
+    "body": "Nervous system relaxation",
+    "mind": "Mental clarity",
+    "do": "Spend time outdoors"
+  }
+}

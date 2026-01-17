@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5b8dfd;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3f6ef4;
+}
+
+#response {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #f7f9fb;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+#response {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Individual card */
+.card {
+  background-color: #f7f9fb;
+  border-left: 5px solid #5b8dfd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.card h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+.card p {
+  margin: 2px 0;
+  color: #555;
+  font-size: 14px;
+  white-space: pre-wrap;
+}

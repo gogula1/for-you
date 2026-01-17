@@ -1,0 +1,40 @@
+// server.js — Backend for "For You"
+
+const express = require('express');
+const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+
+const { generateResponse } = require('./logic/thinker'); // Import thinker.js
+
+const app = express();
+
+// Middlewares
+app.use(helmet());          // Security headers
+app.use(cors());            // Allow frontend requests
+app.use(express.json());    // Parse JSON
+
+// Rate limiter: max 100 requests per 15 min per IP
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100
+});
+app.use(limiter);
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('For You backend is running!');
+});
+
+// Thinker route
+app.get('/think', (req, res) => {
+  const query = req.query.q || 'Hello';
+  const result = generateResponse(query);
+  res.json(result);
+});
+
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

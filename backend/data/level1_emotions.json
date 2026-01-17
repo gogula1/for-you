@@ -1,0 +1,19 @@
+{
+  "sadness": {
+    "type": "emotion",
+    "meaning": "Response to loss or unmet expectations",
+    "eastern": "Attachment to impermanent things",
+    "western": "Emotional processing of loss",
+    "middle_east": "Test of patience and faith",
+    "action": "Accept, rest, and seek support"
+  },
+
+  "anger": {
+    "type": "emotion",
+    "meaning": "Reaction to perceived injustice",
+    "eastern": "Loss of inner balance",
+    "western": "Boundary violation response",
+    "middle_east": "Strength lies in restraint",
+    "action": "Pause, breathe, respond later"
+  }
+}
